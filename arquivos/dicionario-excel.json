@@ -1,0 +1,127 @@
+{
+  "versao": "1.0",
+  "idioma": "pt-BR",
+  "observacao": "Vocabulário técnico separado do dicionário regional original. Não substituir nem mesclar automaticamente com dicionario.json.",
+  "termos": [
+    {
+      "termo": "SOMA",
+      "fala": "sôma",
+      "categoria": "função",
+      "explicacao": "Adiciona valores numéricos."
+    },
+    {
+      "termo": "MÉDIA",
+      "fala": "média",
+      "categoria": "função",
+      "explicacao": "Calcula a média aritmética."
+    },
+    {
+      "termo": "PROCV",
+      "fala": "proc vê",
+      "categoria": "função",
+      "explicacao": "Procura um valor na primeira coluna de uma matriz."
+    },
+    {
+      "termo": "PROCX",
+      "fala": "proc xis",
+      "categoria": "função",
+      "explicacao": "Função de pesquisa moderna, disponível em versões compatíveis."
+    },
+    {
+      "termo": "SE",
+      "fala": "ésse",
+      "categoria": "função",
+      "explicacao": "Retorna resultados diferentes conforme uma condição."
+    },
+    {
+      "termo": "SOMASE",
+      "fala": "soma sé",
+      "categoria": "função",
+      "explicacao": "Soma valores que atendem a um critério."
+    },
+    {
+      "termo": "CONT.SE",
+      "fala": "conta sé",
+      "categoria": "função",
+      "explicacao": "Conta células que atendem a um critério."
+    },
+    {
+      "termo": "FILTRO",
+      "fala": "filtro",
+      "categoria": "função",
+      "explicacao": "Retorna linhas que atendem a critérios em versões compatíveis."
+    },
+    {
+      "termo": "ÚNICO",
+      "fala": "único",
+      "categoria": "função",
+      "explicacao": "Retorna valores distintos em versões compatíveis."
+    },
+    {
+      "termo": "A1",
+      "fala": "a um",
+      "categoria": "referência",
+      "explicacao": "Endereço da coluna A e linha 1."
+    },
+    {
+      "termo": "$A$1",
+      "fala": "coluna A, linha 1, referência absoluta",
+      "categoria": "referência",
+      "explicacao": "Mantém coluna e linha fixas ao copiar."
+    },
+    {
+      "termo": "!",
+      "fala": "exclamação",
+      "categoria": "símbolo",
+      "explicacao": "Separa nome da planilha e endereço em referências."
+    },
+    {
+      "termo": ":",
+      "fala": "até",
+      "categoria": "símbolo",
+      "explicacao": "Indica intervalo entre células."
+    },
+    {
+      "termo": ";",
+      "fala": "ponto e vírgula",
+      "categoria": "símbolo",
+      "explicacao": "Separador de argumentos comum na configuração regional pt-BR."
+    },
+    {
+      "termo": "=",
+      "fala": "igual a",
+      "categoria": "símbolo",
+      "explicacao": "Inicia fórmulas e representa igualdade."
+    },
+    {
+      "termo": "#REF!",
+      "fala": "erro de referência",
+      "categoria": "erro",
+      "explicacao": "Indica referência inválida."
+    },
+    {
+      "termo": "#DIV/0!",
+      "fala": "erro de divisão por zero",
+      "categoria": "erro",
+      "explicacao": "Indica divisão por zero."
+    },
+    {
+      "termo": "Tabela Dinâmica",
+      "fala": "tabela dinâmica",
+      "categoria": "recurso",
+      "explicacao": "Resume e reorganiza dados para análise."
+    },
+    {
+      "termo": "Dashboard",
+      "fala": "déch-bórd",
+      "categoria": "recurso",
+      "explicacao": "Painel visual de indicadores."
+    },
+    {
+      "termo": "VBA",
+      "fala": "vê bê a",
+      "categoria": "automação",
+      "explicacao": "Visual Basic for Applications, linguagem de automação do Office."
+    }
+  ]
+}
