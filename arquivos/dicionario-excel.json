@@ -1,127 +1,238 @@
+
 {
-  "versao": "1.0",
+  "nome": "Dicionário Excel Vox Lab",
+  "versao": "1.0.0",
   "idioma": "pt-BR",
-  "observacao": "Vocabulário técnico separado do dicionário regional original. Não substituir nem mesclar automaticamente com dicionario.json.",
+  "descricao": "Dicionário de termos e funções do Excel para estudantes iniciantes.",
   "termos": [
     {
+      "id": "celula",
+      "termo": "Célula",
+      "categoria": "Estrutura",
+      "explicacao": "É cada pequeno espaço da planilha onde podemos inserir textos, números ou fórmulas.",
+      "exemplo": "A1 representa a célula localizada na coluna A e na linha 1."
+    },
+    {
+      "id": "linha",
+      "termo": "Linha",
+      "categoria": "Estrutura",
+      "explicacao": "É um conjunto horizontal de células, identificado por números.",
+      "exemplo": "A linha 5 contém as células A5, B5, C5 e assim por diante."
+    },
+    {
+      "id": "coluna",
+      "termo": "Coluna",
+      "categoria": "Estrutura",
+      "explicacao": "É um conjunto vertical de células, identificado por letras.",
+      "exemplo": "A coluna B contém B1, B2, B3 e as demais células abaixo."
+    },
+    {
+      "id": "intervalo",
+      "termo": "Intervalo",
+      "categoria": "Estrutura",
+      "explicacao": "É um conjunto de duas ou mais células selecionadas.",
+      "exemplo": "A1:A10 representa as células da A1 até a A10."
+    },
+    {
+      "id": "pasta_trabalho",
+      "termo": "Pasta de trabalho",
+      "categoria": "Estrutura",
+      "explicacao": "É o arquivo do Excel que pode conter uma ou várias planilhas.",
+      "exemplo": "Um arquivo chamado Controle.xlsx é uma pasta de trabalho."
+    },
+    {
+      "id": "planilha",
+      "termo": "Planilha",
+      "categoria": "Estrutura",
+      "explicacao": "É uma página de trabalho formada por linhas e colunas.",
+      "exemplo": "Um arquivo pode ter planilhas chamadas Vendas, Estoque e Resumo."
+    },
+    {
+      "id": "formula",
+      "termo": "Fórmula",
+      "categoria": "Cálculos",
+      "explicacao": "É uma expressão utilizada para realizar cálculos. Normalmente começa com o sinal de igual.",
+      "exemplo": "=A1+B1"
+    },
+    {
+      "id": "operadores",
+      "termo": "Operadores matemáticos",
+      "categoria": "Cálculos",
+      "explicacao": "São símbolos usados para realizar operações matemáticas.",
+      "exemplo": "+ soma, - subtração, * multiplicação, / divisão e ^ potência."
+    },
+    {
+      "id": "soma",
       "termo": "SOMA",
-      "fala": "sôma",
-      "categoria": "função",
-      "explicacao": "Adiciona valores numéricos."
+      "categoria": "Funções",
+      "explicacao": "Adiciona os valores de um conjunto de células.",
+      "formula": "=SOMA(A1:A10)",
+      "exemplo": "Soma todos os números entre A1 e A10."
     },
     {
+      "id": "media",
       "termo": "MÉDIA",
-      "fala": "média",
-      "categoria": "função",
-      "explicacao": "Calcula a média aritmética."
+      "categoria": "Funções",
+      "explicacao": "Calcula a média aritmética dos valores informados.",
+      "formula": "=MÉDIA(B2:B8)",
+      "exemplo": "Calcula a média dos valores de B2 até B8."
     },
     {
-      "termo": "PROCV",
-      "fala": "proc vê",
-      "categoria": "função",
-      "explicacao": "Procura um valor na primeira coluna de uma matriz."
+      "id": "minimo",
+      "termo": "MÍNIMO",
+      "categoria": "Funções",
+      "explicacao": "Encontra o menor valor de um intervalo.",
+      "formula": "=MÍNIMO(C2:C20)",
+      "exemplo": "Mostra o menor valor encontrado entre C2 e C20."
     },
     {
-      "termo": "PROCX",
-      "fala": "proc xis",
-      "categoria": "função",
-      "explicacao": "Função de pesquisa moderna, disponível em versões compatíveis."
+      "id": "maximo",
+      "termo": "MÁXIMO",
+      "categoria": "Funções",
+      "explicacao": "Encontra o maior valor de um intervalo.",
+      "formula": "=MÁXIMO(C2:C20)",
+      "exemplo": "Mostra o maior valor encontrado entre C2 e C20."
     },
     {
+      "id": "cont_numeros",
+      "termo": "CONT.NÚM",
+      "categoria": "Funções",
+      "explicacao": "Conta quantas células de um intervalo contêm números.",
+      "formula": "=CONT.NÚM(A1:A20)",
+      "exemplo": "Conta quantas células numéricas existem no intervalo."
+    },
+    {
+      "id": "cont_valores",
+      "termo": "CONT.VALORES",
+      "categoria": "Funções",
+      "explicacao": "Conta quantas células não estão vazias.",
+      "formula": "=CONT.VALORES(A1:A20)",
+      "exemplo": "Conta células preenchidas com textos, números ou outros valores."
+    },
+    {
+      "id": "se",
       "termo": "SE",
-      "fala": "ésse",
-      "categoria": "função",
-      "explicacao": "Retorna resultados diferentes conforme uma condição."
+      "categoria": "Lógica",
+      "explicacao": "Verifica uma condição e retorna um resultado quando ela é verdadeira e outro quando é falsa.",
+      "formula": "=SE(A1>=7;\"Aprovado\";\"Revisar\")",
+      "exemplo": "Se A1 for maior ou igual a 7, mostra Aprovado; caso contrário, mostra Revisar."
     },
     {
+      "id": "e",
+      "termo": "E",
+      "categoria": "Lógica",
+      "explicacao": "Verifica se todas as condições informadas são verdadeiras.",
+      "formula": "=E(A1>=7;B1>=75)",
+      "exemplo": "Retorna VERDADEIRO somente se as duas condições forem atendidas."
+    },
+    {
+      "id": "ou",
+      "termo": "OU",
+      "categoria": "Lógica",
+      "explicacao": "Verifica se pelo menos uma das condições informadas é verdadeira.",
+      "formula": "=OU(A1>=7;B1>=75)",
+      "exemplo": "Retorna VERDADEIRO quando pelo menos uma condição é atendida."
+    },
+    {
+      "id": "somase",
       "termo": "SOMASE",
-      "fala": "soma sé",
-      "categoria": "função",
-      "explicacao": "Soma valores que atendem a um critério."
+      "categoria": "Funções condicionais",
+      "explicacao": "Soma valores que atendem a um critério específico.",
+      "formula": "=SOMASE(A2:A20;\"Sul\";B2:B20)",
+      "exemplo": "Soma os valores da coluna B somente quando a região na coluna A for Sul."
     },
     {
+      "id": "cont_se",
       "termo": "CONT.SE",
-      "fala": "conta sé",
-      "categoria": "função",
-      "explicacao": "Conta células que atendem a um critério."
+      "categoria": "Funções condicionais",
+      "explicacao": "Conta quantas células atendem a uma condição.",
+      "formula": "=CONT.SE(A2:A20;\"Pago\")",
+      "exemplo": "Conta quantas vezes aparece a palavra Pago."
     },
     {
-      "termo": "FILTRO",
-      "fala": "filtro",
-      "categoria": "função",
-      "explicacao": "Retorna linhas que atendem a critérios em versões compatíveis."
+      "id": "procv",
+      "termo": "PROCV",
+      "categoria": "Pesquisa",
+      "explicacao": "Procura um valor na primeira coluna de uma tabela e retorna uma informação de outra coluna.",
+      "formula": "=PROCV(E2;A2:C20;3;FALSO)",
+      "exemplo": "Procura o valor de E2 na primeira coluna do intervalo e retorna a informação da terceira coluna."
     },
     {
-      "termo": "ÚNICO",
-      "fala": "único",
-      "categoria": "função",
-      "explicacao": "Retorna valores distintos em versões compatíveis."
+      "id": "procx",
+      "termo": "PROCX",
+      "categoria": "Pesquisa",
+      "explicacao": "Procura um valor em um intervalo e retorna o resultado correspondente de outro intervalo.",
+      "formula": "=PROCX(E2;A2:A20;C2:C20;\"Não encontrado\")",
+      "exemplo": "Procura E2 na coluna A e retorna o valor correspondente da coluna C."
     },
     {
-      "termo": "A1",
-      "fala": "a um",
-      "categoria": "referência",
-      "explicacao": "Endereço da coluna A e linha 1."
+      "id": "filtro",
+      "termo": "Filtro",
+      "categoria": "Organização",
+      "explicacao": "Permite exibir somente os registros que atendem aos critérios selecionados.",
+      "exemplo": "Exibir apenas vendas realizadas na região Sul."
     },
     {
-      "termo": "$A$1",
-      "fala": "coluna A, linha 1, referência absoluta",
-      "categoria": "referência",
-      "explicacao": "Mantém coluna e linha fixas ao copiar."
+      "id": "classificacao",
+      "termo": "Classificação",
+      "categoria": "Organização",
+      "explicacao": "Organiza os dados em uma ordem, como crescente, decrescente, alfabética ou por data.",
+      "exemplo": "Ordenar uma lista de clientes de A até Z."
     },
     {
-      "termo": "!",
-      "fala": "exclamação",
-      "categoria": "símbolo",
-      "explicacao": "Separa nome da planilha e endereço em referências."
+      "id": "validacao",
+      "termo": "Validação de dados",
+      "categoria": "Organização",
+      "explicacao": "Controla quais informações podem ser inseridas em determinadas células.",
+      "exemplo": "Criar uma lista suspensa com as opções Pago, Pendente e Cancelado."
     },
     {
-      "termo": ":",
-      "fala": "até",
-      "categoria": "símbolo",
-      "explicacao": "Indica intervalo entre células."
+      "id": "referencia_relativa",
+      "termo": "Referência relativa",
+      "categoria": "Referências",
+      "explicacao": "É uma referência que muda automaticamente quando a fórmula é copiada para outra célula.",
+      "exemplo": "A1 pode mudar para A2 ao copiar a fórmula uma linha abaixo."
     },
     {
-      "termo": ";",
-      "fala": "ponto e vírgula",
-      "categoria": "símbolo",
-      "explicacao": "Separador de argumentos comum na configuração regional pt-BR."
+      "id": "referencia_absoluta",
+      "termo": "Referência absoluta",
+      "categoria": "Referências",
+      "explicacao": "É uma referência fixada com o símbolo de cifrão, impedindo que a linha ou coluna seja alterada ao copiar a fórmula.",
+      "exemplo": "$A$1 mantém a referência fixa."
     },
     {
-      "termo": "=",
-      "fala": "igual a",
-      "categoria": "símbolo",
-      "explicacao": "Inicia fórmulas e representa igualdade."
+      "id": "grafico",
+      "termo": "Gráfico",
+      "categoria": "Visualização",
+      "explicacao": "Representa dados visualmente para facilitar comparações e interpretações.",
+      "exemplo": "Um gráfico de colunas pode comparar as vendas de cada mês."
     },
     {
-      "termo": "#REF!",
-      "fala": "erro de referência",
-      "categoria": "erro",
-      "explicacao": "Indica referência inválida."
+      "id": "tabela_dinamica",
+      "termo": "Tabela dinâmica",
+      "categoria": "Análise",
+      "explicacao": "É um recurso que resume, agrupa e analisa grandes conjuntos de dados.",
+      "exemplo": "Resumir as vendas por produto, região ou mês."
     },
     {
-      "termo": "#DIV/0!",
-      "fala": "erro de divisão por zero",
-      "categoria": "erro",
-      "explicacao": "Indica divisão por zero."
+      "id": "formatacao_condicional",
+      "termo": "Formatação condicional",
+      "categoria": "Visualização",
+      "explicacao": "Aplica formatos automaticamente quando uma célula atende a uma regra.",
+      "exemplo": "Destacar em vermelho os valores abaixo da meta."
     },
     {
-      "termo": "Tabela Dinâmica",
-      "fala": "tabela dinâmica",
-      "categoria": "recurso",
-      "explicacao": "Resume e reorganiza dados para análise."
-    },
-    {
-      "termo": "Dashboard",
-      "fala": "déch-bórd",
-      "categoria": "recurso",
-      "explicacao": "Painel visual de indicadores."
-    },
-    {
-      "termo": "VBA",
-      "fala": "vê bê a",
-      "categoria": "automação",
-      "explicacao": "Visual Basic for Applications, linguagem de automação do Office."
+      "id": "referencia_estruturada",
+      "termo": "Referência estruturada",
+      "categoria": "Tabelas",
+      "explicacao": "É uma forma de referenciar dados de uma tabela do Excel utilizando nomes de colunas.",
+      "exemplo": "=SOMA(TabelaVendas[Valor])"
     }
+  ],
+  "observacoes": [
+    "As fórmulas estão escritas com nomes de funções em português e separador de argumentos por ponto e vírgula.",
+    "Algumas funções dependem da versão do Excel utilizada.",
+    "A disponibilidade de funções pode variar entre Excel, Excel para Web e outros aplicativos de planilha.",
+    "Os exemplos utilizam referências ilustrativas e podem ser adaptados às atividades do curso."
   ]
 }
